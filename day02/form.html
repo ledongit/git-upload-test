@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>form 태그에 대해 알아봅시다.</h1>
+    <p>꼭 알아야 함</p>
+    <form action="insert.html" method="get">
+      <div>
+        <input
+          type="text"
+          placeholder="아이디를 입력하세요."
+          maxlength="10"
+          name="id"
+          value="dong"
+          readonly
+        />
+      </div>
+      <!-- input 태그는 inline으로 입력됨 -->
+      <div>
+        <input
+          type="password"
+          placeholder="패스워드를 입력하세요."
+          name="password"
+        />
+      </div>
+      <div>
+        <input
+          type="number"
+          placeholder="입찰가격을 입력하세요."
+          step="10000"
+          name="price"
+        />
+      </div>
+      <div>
+        <input type="date" placeholder="날짜를 입력하세요." name="date" />
+      </div>
+      <div>
+        <input
+          type="email"
+          placeholder="이메일을 입력하세요."
+          required
+          name="email"
+        />
+      </div>
+      <div>
+        <p>성별</p>
+        <!-- label 태그를 이용하여 id와 일치시키면 글자를 클릭해도 선택이 됨 - 접근성 향상 -->
+        <input type="radio" name="gender" id="female" value="female" checked /><label for="feamle">여자</label>
+        <input type="radio" name="gender" id="male" value="male" /><label for="male">남자</label>
+        <!-- 체크박스와 라디오는 value 값이 전송됨 -->
+      </div>
+      <div>
+        <p>관심분야</p>
+        <!-- <input type="checkbox" name="" id="politic"><label for="politic">html</label>
+        <input type="checkbox" name="" id="css"><label for="css">css</label>
+        <input type="checkbox" name="" id="js"><label for="js">js</label>
+        <input type="checkbox" name="" id="node"><label for="node">node</label>
+        <input type="checkbox" name="" id="react"><label for="react">react</label> -->
+        <label><span>html</span><input type="checkbox" name="favorite" value="html" checked /></label>
+        <label><span>css</span><input type="checkbox" name="favorite" id="css" value="css" /></label>
+        <!-- 이렇게 할 경우 for는 지워야함 -->
+        <select name="grade" id="">
+          <option value="">학력을 선택해 주세요.</option>
+          <option value="1">중졸</option>
+          <option value="2">고졸</option>
+          <option value="3">대졸</option>
+        </select>
+        <textarea name="contents" id="" cols="30" rows="10"></textarea>
+        <input type="file" name="profile" />
+      </div>
+          <button>전송</button>
+
+      </div>
+    </form>
+  </body>
+</html>

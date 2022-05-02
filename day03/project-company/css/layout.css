@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.125em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#header {
+  font-family: "Noto Sans KR";
+  display: flex;
+  flex-direction: row;
+  padding-right: 17px;
+  padding-left: 11px;
+  font-weight: bold;
+  color: #333333;
+  justify-content: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+}
+
+#gnb .list {
+  display: flex;
+}
+
+#gnb h2 {
+  display: none;
+}
+
+#gnb .list .depth01 {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gnb .list .depth02 {
+  padding-left: 30px;
+  font-size: 13.6px;
+}
+#gnb .list .depth02 li {
+  margin-top: 20px;
+}

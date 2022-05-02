@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <table border="1" width="800px">
+      <caption>
+        유한양행
+      </caption>
+      <colgroup>
+        <col width="10%" />
+        <col width="40%" />
+        <col width="10%" />
+        <col width="40%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">기업명</th>
+          <td>유한양행</td>
+          <th scope="">설립</th>
+          <td>1926. 06. 20</td>
+        </tr>
+        <tr>
+          <th scope="row">대표이사</th>
+          <td>김동현</td>
+          <th scope="">상장일</th>
+          <td>1962. 11. 01</td>
+        </tr>
+        <tr>
+          <th scope="">주소</th>
+          <td colspan="3">서울특별시 동작구 노량진로 74</td>
+        </tr>
+        <tr>
+          <th scope="">전화번호</th>
+          <td colspan="3">02-828-0181</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1" width="800px">
+      <caption>
+        team
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">NAME</th>
+          <th scope="col">SUBJECT</th>
+          <th scope="col">MARKS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Hillary</td>
+          <td>Advanced Web</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Lary</td>
+          <td>Advanced Web</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Operationg System</td>
+          <td>75</td>
+        </tr>
+        <tfoot>
+          <td></td>
+          <td colspan="2">Total Average: 72.5</td>
+        </tfoot>
+      </tbody>
+    </table>
+  </body>
+</html>
