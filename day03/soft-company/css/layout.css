@@ -1,0 +1,92 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap'); */
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+/* a 태그는 컬러를 부모로부터 상속받지 않는다. 만약 상속을 강제로 받게 하려면 inherit을 쓰면 된다.
+      아니면 컬러를 재정의 한다.*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* block (div, p, h, header, nav, footer, ul, ol, dl, li 등등) */
+/* fhd (1920)
+4k (2580) */
+
+#header {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin auto를 쓸 경우 left, right 둘 다 써야함 */
+  /* border: 1px solid #ff0000; */
+  font-family: "Noto Sans KR";
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row; -> default, 방향 결정*/
+  justify-content: space-between;
+  /* main-axis */
+}
+/*flex-start : 왼쪽 정렬, flex-end : 오른쪽 정렬, center : 가운데 정렬 space-around*/
+
+#logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#gnb {
+  /* border: 1px solid #0000ff; */
+}
+
+#gnb .list {
+  display: flex;
+}
+#gnb h2 {
+  display: none;
+}
+#gnb .list .depth01 {
+  font-size: 18px;
+  font-size: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100px;
+}
+#gnb .list .depth02 {
+  padding-left: 30px;
+  color: #666;
+}
+#gnb .list .depth02 li {
+  margin-top: 10px;
+}
+#gnb .list .depth02 .depth03 {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* inline tag(a, em. strong, i, b, span) : width(넓이), 높이(height) 지정 못함*/
+/* 자기 컨텐츠만큼의 넓이 높이를 가진다. display: block; 추가하면 가능 */
+
+/* header에만 적용하고 싶을 때 */
+/* #wrap #header a {
+  background: #0000ff;
+  color: #ffffff;
+  width: 800px;
+  display: block; /*display 속성은 내 마음대로 바꿀 수 있다.
+} */
+
+/* class (류) */
+/* style 이 가장 우선시, id가 그 다음 우선시 함, class는 나중에 적용됨 
+자바스크립트로 css를 제어하면 기존 퍼블리셔가 적용한 것보다 우선 적용
+style 1000
+id 100
+class 10
+tag 1
+*/
+
+/* block을 옆으로 나란히 배치하는 방법 */
